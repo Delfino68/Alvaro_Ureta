@@ -172,27 +172,29 @@
       <div>
         <h2>Contacto</h2>
         <form>
-          <label for="name">Nombre</label>
-          <input type="text" name="name" id="name" />
-          <br />
-          <label for="email">correo</label>
-          <input type="email" name="email" id="email" />
-          <br />
-          <label for="phone">Celular</label>
-          <input type="number" name="phone" id="phone" />
+          <input type="text" name="name" id="name" placeholder="Nombre" required/>
           <br />
           <br />
-          <label for="message">Mensaje</label>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          <input type="email" name="email" id="email" placeholder="Correo" minlength="5" maxlength="256" required/>
           <br />
           <br />
-          <select name="dream" id="dream">
-            <option>--- seleccionar sueño ---</option>
+          <input type="number" name="phone" id="phone" placeholder="Celular" min="900000000" max="999999999" required/>
+          <br />
+          <br />
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje" maxlength="256" required></textarea>
+          <br />
+          <br />
+          <label for="dream">Sueño a realizar</label>
+          <br />
+          <select name="dream" id="dream" required>
             <option value="landing-page">Landing-Page</option>
             <option value="e-commerce">e-commerce</option>
-            <option value="foro">Foro</option>
+            <option value="foro">Blog</option>
             <option value="application">Aplicación</option>
           </select>
+          <br />
+          <br />
+          <input type="submit" value="Registrar sueño" />
         </form>
       </div>
     </section>
